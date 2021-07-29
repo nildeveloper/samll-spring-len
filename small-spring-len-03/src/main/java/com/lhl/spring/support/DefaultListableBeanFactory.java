@@ -18,7 +18,7 @@ import java.util.Map;
  *
  * 可同时使用注册Bean（BeanDefinitionRegistry） 与 获取Bean（AbstractBeanFactory（模板））
  */
-public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry{
+public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
 
     /**
      * 容器 维护BeanDefinition

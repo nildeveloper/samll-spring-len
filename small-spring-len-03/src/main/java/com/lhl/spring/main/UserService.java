@@ -10,6 +10,11 @@ package com.lhl.spring.main;
  */
 public class UserService {
 
+    private String name;
+
+    public UserService(String name) {
+        this.name = name;
+    }
 
     public UserService() {
         System.out.println("new instance userService");
@@ -17,5 +22,16 @@ public class UserService {
 
     public void queryUserInfo() {
         System.out.println("Hello World!");
+    }
+
+    public String getUserById(int id) {
+        return "userId=" + id + " username=" + name;
+    }
+
+    @Override
+    public String toString() {
+        return "UserService{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

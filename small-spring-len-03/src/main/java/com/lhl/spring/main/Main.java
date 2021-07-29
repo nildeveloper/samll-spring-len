@@ -18,16 +18,13 @@ public class Main {
         // 初始化BeanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
 
-        // 注册bean
+        // 注入Bean
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition("userService", beanDefinition);
 
-        // 第一次获取Bean
-        UserService userService = (UserService)beanFactory.getBean("userService");
-        userService.queryUserInfo();
-
-        // 第二次获取Bean
-        UserService userServiceSingleton = (UserService)beanFactory.getBean("userService");
-        userServiceSingleton.queryUserInfo();
+        // 获取bean
+        UserService userService = (UserService)beanFactory.getBean("userService", "Tony");
+        String user = userService.getUserById(3);
+        System.out.println(user);
     }
 }

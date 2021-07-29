@@ -16,4 +16,13 @@ public interface BeanFactory {
      * @return
      */
     Object getBean(String name);
+
+    /**
+     * getBean
+     * 带args参数，可使用有参构造方法初始化对象实例
+     * @param name
+     * @param args
+     * @return
+     */
+    Object getBean(String name, Object... args);
 }
