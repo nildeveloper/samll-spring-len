@@ -2,10 +2,9 @@ package com.lhl.spring.main;
 
 import com.lhl.spring.PropertyValue;
 import com.lhl.spring.PropertyValues;
-import com.lhl.spring.config.BeanDefinition;
-import com.lhl.spring.config.BeanReference;
-import com.lhl.spring.support.DefaultListableBeanFactory;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+import com.lhl.spring.beans.factory.config.BeanDefinition;
+import com.lhl.spring.beans.factory.config.BeanReference;
+import com.lhl.spring.beans.factory.support.DefaultListableBeanFactory;
 
 /**
  * Created with IntelliJ IDEA

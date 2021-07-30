@@ -1,7 +1,7 @@
 package com.lhl.spring.main;
 
-import com.lhl.spring.config.BeanDefinition;
-import com.lhl.spring.support.DefaultListableBeanFactory;
+import com.lhl.spring.beans.factory.config.BeanDefinition;
+import com.lhl.spring.beans.factory.support.DefaultListableBeanFactory;
 
 /**
  * Created with IntelliJ IDEA
